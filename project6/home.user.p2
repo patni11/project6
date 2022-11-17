@@ -4,20 +4,17 @@ abi <abi/3.0>,
 include <tunables/global>
 
 /home/xenox/Desktop/project6/p2 {
+
   include <abstractions/apache2-common>
-  include <abstractions/audio>
-  include <abstractions/base>
-  include <abstractions/bash>
   include <abstractions/evince>
-  include <abstractions/hosts_access>
 
   /home/xenox/Desktop/project6/p2 mr,
-  /sys/kernel/mm/transparent_hugepage/hpage_pmd_size r,
   /var/log/syslog r,
-  /etc/crontab r,
   /proc/version r,
+  /etc/crontab r,
   /proc/buddyinfo r,
   owner /home/*/.project2/config w,
   owner /home/*/Desktop/project6/template r,
 
 }
+
